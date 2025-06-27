@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dwello - Financial Advisory Assistant</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <div class="header">
+        <h1>Dwello</h1>
+        <p class="subtitle">Your Personal Financial Advisory Assistant</p>
+        <p class="status">
+          Current Status: <span id="current-behavior">neutral</span>
+        </p>
+      </div>
+
+      <!-- Canvas -->
+      <div class="canvas-container">
+        <h2>Your Financial Room</h2>
+        <canvas id="room-canvas"></canvas>
+        <p class="canvas-description">
+          Your room changes based on your financial behavior patterns
+        </p>
+      </div>
+
+      <!-- Chat Interface -->
+      <div class="chat-container">
+        <h2>Chat with Dwello AI</h2>
+
+        <!-- API Key Input -->
+        <div id="api-key-section" class="api-key-section">
+          <h3>AI Backend Setup Required</h3>
+          <p>
+            For the best experience, connect to Supabase to securely store your
+            API key. For now, you can temporarily enter your Gemini API key
+            below:
+          </p>
+          <div class="api-key-form">
+            <input
+              type="password"
+              id="api-key-input"
+              placeholder="Enter your Gemini API key"
+            />
+            <button id="connect-btn">Connect</button>
+          </div>
+        </div>
+
+        <div
+          id="api-key-connected"
+          class="api-key-connected"
+          style="display: none"
+        >
+          <p>✓ AI backend connected and ready!</p>
+        </div>
+
+        <!-- Chat History -->
+        <div id="chat-history" class="chat-history">
+          <p class="empty-chat">
+            Please enter your API key above to start chatting with the AI
+            advisor.
+          </p>
+        </div>
+
+        <!-- Chat Input -->
+        <form id="chat-form" class="chat-form">
+          <textarea
+            id="message-input"
+            placeholder="Ask me about your finances, budgeting, investments, or any financial concerns..."
+            rows="3"
+            disabled
+          ></textarea>
+          <button type="submit" id="send-btn" disabled>Send Message</button>
+        </form>
+
+        <!-- Quick Actions
+        <div class="quick-actions">
+          <button class="quick-btn" data-behavior="saving_good">
+            Good Savings
+          </button>
+          <button class="quick-btn" data-behavior="overspending">
+            Overspending
+          </button>
+          <button class="quick-btn" data-behavior="income_high">
+            High Income
+          </button>
+          <button class="quick-btn" data-behavior="debt_risk">Debt Risk</button>
+          <button class="quick-btn" data-behavior="neutral">Neutral</button>
+        </div>
+      </div> -->
+
+      <!-- Footer -->
+      <div class="footer">
+        <p>© 2025 Dwello - Visualizing Your Financial Journey</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
