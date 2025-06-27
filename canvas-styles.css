@@ -1,0 +1,27 @@
+.canvas-container {
+    background: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.canvas-container h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 1rem;
+}
+
+#room-canvas {
+    border: 2px solid #d1d5db;
+    border-radius: 0.5rem;
+    max-width: 100%;
+    image-rendering: crisp-edges;
+}
+
+.canvas-description {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-top: 0.5rem;
+}
