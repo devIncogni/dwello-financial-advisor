@@ -2,6 +2,8 @@
     .container {
         padding: 0.5rem;
         gap: 1rem;
+        display: flex;
+        flex-direction: column;
     }
 
     .header h1 {
@@ -15,6 +17,10 @@
     .canvas-container,
     .chat-container {
         padding: 1rem;
+    }
+
+    .chat-history {
+        height: 8rem;
     }
 
     .quick-actions {

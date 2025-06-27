@@ -4,6 +4,8 @@
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
     padding: 1.5rem;
     text-align: center;
+
+    grid-column: 1/2;
 }
 
 .canvas-container h2 {
