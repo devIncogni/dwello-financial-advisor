@@ -1,0 +1,45 @@
+@media (max-width: 768px) {
+    .container {
+        padding: 0.5rem;
+        gap: 1rem;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .canvas-container,
+    .chat-container {
+        padding: 1rem;
+    }
+
+    .quick-actions {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .api-key-form {
+        flex-direction: column;
+    }
+
+    #connect-btn {
+        padding: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.75rem;
+    }
+
+    .quick-actions {
+        grid-template-columns: 1fr;
+    }
+
+    .message-bubble {
+        max-width: 90%;
+    }
+}
